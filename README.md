@@ -3,6 +3,22 @@ Set of bash scripts for sysadmin i developed for [Academia Nacional de Ajedrez](
 
 I'm trying to be modular and easy to ready code so my organization of files are simple so far:
 
+# Configuration
+
+## SSH Keys
+
+You need to copy your ssh public key to you backup server. I use rsync over ssh to take backups.
+
+## Aliases
+
+To easy run ```occ```command.
+
+<pre><code>
+  alias occ='sudo -u apache php /var/www/nextcloud/occ'
+</pre></code>
+
+## 
+
 <pre><code>
 .
 ├── lib                    < stand alone and common scripts
