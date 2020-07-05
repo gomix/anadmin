@@ -25,7 +25,7 @@ I'm trying to be modular and easy to ready code so my organization of files are 
 <pre><code>
 $ sh status_general.sh0
 
-[0;32m############# NEXTCLOUD STATUS[0m
+############# NEXTCLOUD STATUS
 
 {
     "installed": true,
@@ -33,25 +33,25 @@ $ sh status_general.sh0
     "versionstring": "18.0.6",
     "edition": ""
 }
-[0;32m############# [0m
+#############
 
-[0;32m############# OS UPDATES CHECK[0m
-[0;32m OS: Everything up to date[0m
-[0;32m############# [0m
+############# OS UPDATES CHECK
+ OS: Everything up to date
+############# 
 
-[0;32m############# NEXTCLOUD UPDATES CHECK[0m
-[0;32m NextCloud: Everything up to date[0m
-[0;32m############# [0m
+############# NEXTCLOUD UPDATES CHECK
+ NextCloud: Everything up to date
+############# 
 
-[0;32m############# LETSENCRYPT CERTIFICATES EXPIRATION DATE CHECK[0m
+############# LETSENCRYPT CERTIFICATES EXPIRATION DATE CHECK
 notBefore=Jun 19 23:23:49 2020 GMT
 notAfter=Sep 17 23:23:49 2020 GMT
-[0;32m############# [0m
+############# 
 
-[0;32m############# SERVICES STATUS CHECK[0m
+############# SERVICES STATUS CHECK
 Apache status: active
 PHP-FPM status: active
 MariaDB status: active
 Redis status: active
-[0;32m############# [0m
+############# 
 </pre></code>
