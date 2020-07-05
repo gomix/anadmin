@@ -23,9 +23,14 @@ sh lib/nc_en_mantenimiento.sh
 
 # Directorios  (fs)
 backup_start_header "NextCloud Directories (fs)"
-backup_dir "/var/www/nextcloud/config"
-backup_dir "/var/www/nextcloud/themes"
-backup_dir "/var/www/data"
+declare -a dirs=("/var/www/nextcloud/config"
+                 "/var/www/nextcloud/themes"
+		 "/var/www/data")
+
+for dir in "${dirs[@]}"
+do
+  backup_dir $dir
+done
 backup_finished_header 
 
 # Archivos y Directorios de Configuración  (fs)
