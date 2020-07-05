@@ -9,3 +9,12 @@ I'm trying to be modular and easy to ready code so my organization of files are 
 ├── some_bash_script.sh    < hihg level scripts
 └── wip                    < work in progress scripts (developing)
 </code></pre>
+
+## What i managing
+
+* [ANA NextCloud](https://virtual.anaj.org.ve/) instance
+
+## Tasks
+
+1. Query status
+2. Take backups
