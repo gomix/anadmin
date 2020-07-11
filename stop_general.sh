@@ -2,7 +2,7 @@
 #
 # Stop NextCloud and related services
 # in order. Tipically as a previous step
-# for stopping or rebooting  the server
+# for stopping, rebooting, updating the server
 
 # Put NextCloud in maintenance mode
 sh lib/nc_en_mantenimiento.sh
