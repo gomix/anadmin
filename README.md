@@ -31,10 +31,20 @@ To easily run ```occ```command and manage you NextCloud instance.
 
 * [ANA NextCloud](https://virtual.anaj.org.ve/) instance
 
-## Tasks
+## Tasks Menu
 
-1. Query status
-2. Take backups
+Now we have a cool simple menu to select from:
+
+<pre><code>
+$ ./menu.sh
+1) Global Status                         7) NextCloud Maintenance Mode Disable                   
+2) General Start                         8) Services Status                                      
+3) General Stop                          9) Services Start                                       
+4) Make Backups                         10) Services Stop                                        
+5) Update OS                            11) Quit
+6) NextCloud Maintenance Mode Enable
+Please select your choice:
+</pre></code>
 
 ## Sample script output
 
