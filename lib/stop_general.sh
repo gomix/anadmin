@@ -5,13 +5,13 @@
 # for stopping, rebooting, updating the server
 
 # Put NextCloud in maintenance mode
-sh lib/nc_en_mantenimiento.sh
+lib/nc_en_mantenimiento.sh
 
 # Just sleep 
 sleep 5
 
 # Stop all backend components in order
-sh lib/stop_services.sh
+lib/stop_services.sh
 
 # Status all backend components in order
-sh lib/status_services.sh
+lib/status_services.sh

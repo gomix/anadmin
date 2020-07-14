@@ -1,13 +1,10 @@
 #!/usr/bin/bash
+source lib/common_fns.sh
 
 # Parada de servicios ordenada
-
-sudo systemctl stop httpd
-sleep 1
-sudo systemctl stop php-fpm
-sleep 1
-sudo systemctl stop mariadb
-sleep 1
-sudo systemctl stop redis
-sleep 1
-
+section_header "Stop Services (begin)"
+stop_service "httpd"
+stop_service "php-fpm"
+stop_service "mariadb"
+stop_service "redis"
+section_header "Stop Services (end)"

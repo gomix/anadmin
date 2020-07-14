@@ -1,8 +1,10 @@
 #!/usr/bin/bash
+source lib/common_fns.sh
 
 # Arranque de servicios ordenado
-
-sudo systemctl start redis
-sudo systemctl start mariadb
-sudo systemctl start php-fpm
-sudo systemctl start httpd
+section_header "Start Services (begin)"
+start_service "redis"
+start_service "mariadb"
+start_service "php-fpm"
+start_service "httpd"
+section_header "Start Services (end)"

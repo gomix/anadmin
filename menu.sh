@@ -7,6 +7,7 @@
 function show_menu {
   PS3='Please select your choice: '
   options=("Global Status"\
+           "General Start"\
            "General Stop"\
            "Make Backups"\
            "Update OS"\
@@ -31,38 +32,35 @@ while true; do
   option=$(show_menu)
   case $option in
       "Global Status")
-        ./status_general.sh
+        lib/status_general.sh
+        ;;
+      "General Start")
+        lib/start_general.sh
         ;;
       "General Stop")
-        ./stop_general.sh
+        lib/stop_general.sh
         ;;
       "Make Backups")
-        ./lib/make_backups.sh
+        lib/make_backups.sh
         ;;
       "Update OS")
-        ./lib/update_os.sh
+        lib/update_os.sh
         ;;
-  
-      "Services Start")
-        ./lib/start_services.sh
-        ;;
-
       "Services Status")
-        ./lib/status_services.sh
+        lib/status_services.sh
         ;;
-
+      "Services Start")
+        lib/start_services.sh
+        ;;
       "Services Stop")
-        ./lib/stop_services.sh
+        lib/stop_services.sh
         ;;
-
       "NextCloud Maintenance Mode Enable")
-        sh lib/nc_en_mantenimiento.sh
+        lib/nc_en_mantenimiento.sh
         ;;
-
       "NextCloud Maintenance Mode Disable")
-        sh lib/nc_en_servicio.sh
+        lib/nc_en_servicio.sh
         ;;
-
       "Quit")
         break
         ;;

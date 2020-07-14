@@ -1,5 +1,7 @@
 # Common functions library
 
+occ='sudo -u apache php /var/www/nextcloud/occ'
+
 # ANSI Colors escape codes
 NC='\033[0m' 
 BLACK='\033[0;30m'
@@ -18,6 +20,29 @@ PURPLE='\033[0;35m'
 LPURPLE='\033[1;35m'
 CYAN='\033[0;36m'
 LCYAN='\033[1;36m'
+
+function start_service {
+  service=$1
+  echo -e ${ORANGE} "STARTING: ${1}"
+  sudo systemctl start $1
+  if [ $? -eq 0 ]
+  then
+    echo -e ${GREEN} "STARTED: ${1}"
+  fi
+  echo -e ${GREEN} "----------------------------${NC}"
+}
+
+function stop_service {
+  service=$1
+  echo -e ${ORANGE} "STOPPING: ${1}"
+  sudo systemctl stop $1
+  if [ $? -eq 0 ]
+  then
+    echo -e ${GREEN} "STOPPED: ${1}"
+  fi
+  echo -e ${GREEN} "----------------------------${NC}"
+}
+
 
 function backup_start_header {
   ht=$1

@@ -1,6 +1,10 @@
 #!/usr/bin/bash
 #
 # Toma de respaldo simple con rsync
+#
+# TODO:
+# 1. Limitar a 4 backups
+#    Eliminar los mas antiguos
 
 source lib/common_fns.sh
 

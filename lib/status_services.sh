@@ -2,7 +2,7 @@
 
 source lib/common_fns.sh
 
-section_header "Services Status Check"
+section_header "Services Status Check (begin)"
 
 # Lista Status de servicios ordenada
 echo -n  "Apache status: "
@@ -14,4 +14,4 @@ systemctl is-active mariadb
 echo -n "Redis status: "
 systemctl is-active redis
 
-section_footer 
+section_footer "Services Status Check (end)"
